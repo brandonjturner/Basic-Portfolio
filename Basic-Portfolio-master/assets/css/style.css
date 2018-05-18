@@ -1,1 +1,42 @@
-﻿
+﻿.topnav {
+    background-color: #ffffff;
+    border-bottom:solid;
+    border-color: #cccccc;
+    overflow: hidden;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.leftnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+    .leftnav a:hover {
+        background-color: #4aaaa5;
+        color: black;
+    }
+
+    .leftnav a.active {
+        background-color: #4aaaa5;
+        color: white;
+    }
+
+.rightnav a {
+    float: right;
+    color: #777777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+        .rightnav a:hover {
+            background-color: #4aaaa5;
+            color: black;
+        }
+        .rightnav a.active {
+            background-color: #4aaaa5;
+            color: white;
+        }
