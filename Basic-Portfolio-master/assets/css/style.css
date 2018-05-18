@@ -1,42 +1,61 @@
-﻿.topnav {
+﻿.navbar {
     background-color: #ffffff;
-    border-bottom:solid;
+    border-bottom: solid;
+    text-align: center;
+    margin: auto;
+    width: 80%;
     border-color: #cccccc;
     overflow: hidden;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .leftnav a {
-    float: right;
-    color: #f2f2f2;
+    float: left;
+    width: 350px;
+    overflow: hidden;
+    margin: 14px 16px;
+    color: white;
+    background-color: #4aaaa5;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 26px;
 }
-
-    .leftnav a:hover {
-        background-color: #4aaaa5;
-        color: black;
-    }
-
-    .leftnav a.active {
-        background-color: #4aaaa5;
-        color: white;
-    }
-
+.leftnav a.active {
+    background-color: #4aaaa5;
+    color: white;
+}
 .rightnav a {
+    overflow: hidden;
     float: right;
+    width: 60px;
     color: #777777;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
-        .rightnav a:hover {
-            background-color: #4aaaa5;
-            color: black;
-        }
-        .rightnav a.active {
-            background-color: #4aaaa5;
-            color: white;
-        }
+ul li {
+    float: right;
+    list-style-type: none;
+}
+.rightnav a.active {
+    background-color: #4aaaa5;
+    color: white;
+}
+.rightnav {
+    position: relative;
+    overflow: hidden;
+}
+    .rightnav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: -1px;
+}
+    .rightnav li {
+    flex-grow: 1;
+    flex-basis: auto;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+}
