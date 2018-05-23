@@ -3,7 +3,6 @@
     border-bottom: solid;
     text-align: center;
     margin: auto;
-    width: 80%;
     border-color: #cccccc;
     overflow: hidden;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -20,9 +19,13 @@
     text-decoration: none;
     font-size: 26px;
 }
-.leftnav a.active {
-    background-color: #4aaaa5;
-    color: white;
+.leftnav {
+    position: relative;
+    left: 15%;
+}
+.rightnav {
+    position: relative;
+    right: 15%;
 }
 .rightnav a {
     overflow: hidden;
@@ -38,24 +41,78 @@ ul li {
     float: right;
     list-style-type: none;
 }
-.rightnav a.active {
-    background-color: #4aaaa5;
-    color: white;
-}
-.rightnav {
-    position: relative;
-    overflow: hidden;
-}
-    .rightnav ul {
+.rightnav ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-right: -1px;
 }
-    .rightnav li {
+.rightnav li {
     flex-grow: 1;
     flex-basis: auto;
     text-align: center;
     border-right: 1px solid #ccc;
     background-color: #fff;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    height: 100%;
+    background-image: url("../images/bg.png");
+}
+#footer {
+    height: 35px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#footer-content {
+    background-color: #666666;
+    height: 32px;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.main-info {
+    background-color: white;
+    width: 960px;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+    }
+.contact {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 960px;
+    margin: auto;
 }
